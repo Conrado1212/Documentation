@@ -4,6 +4,13 @@
 }
 body{
     box-sizing: border-box;
-font-family: sans-serif;
-font-size: 15px;
+   font-family: sans-serif;
+   font-size: 15px;
+}
+#navbar{
+    height: 100%;
+    border-right: 1px solid #757272;
+    min-width:300px;
+    letter-spacing: 0.2px;
+    position: fixed;
 }
