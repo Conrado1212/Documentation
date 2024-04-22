@@ -9,18 +9,32 @@ body{
 }
 #navbar{
     height: 100%;
+    border-top: solid 2px #757272;
     border-right: 2px solid #757272;
     min-width:300px;
     letter-spacing: 0.2px;
     position: fixed;
     top: 84px;
     left:0;
+    background-color: #252525;
 }
 #navbar header{
     text-align: center;
     color: #f0f8ff;
     font-size: 32px;
     margin: 10px;
+}
+#navbar ul{
+    list-style: none;
+    position: relative;
+}
+#navbar ul li a{
+   text-decoration: none;
+   color: #f0f8ff;
+   display: block;
+   text-transform: capitalize;
+   font-size: 24px;
+   font-weight: 700;
 }
 .top-menu{
     width: 100%;
