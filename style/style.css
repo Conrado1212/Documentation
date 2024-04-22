@@ -9,8 +9,70 @@ body{
 }
 #navbar{
     height: 100%;
-    border-right: 1px solid #757272;
+    border-right: 2px solid #757272;
     min-width:300px;
     letter-spacing: 0.2px;
     position: fixed;
+    top: 84px;
+    left:0;
+}
+#navbar header{
+    text-align: center;
+    color: #f0f8ff;
+    font-size: 32px;
+    margin: 10px;
+}
+.top-menu{
+    width: 100%;
+    background-color: #1e1e1e;
+    display: flex;
+    margin: auto;
+    
+}
+.logo{
+    text-align: left;
+    font-weight: bold;
+    width: 100%;
+    font-size: 40px;
+    margin: 5px 10px;
+    padding: 10px 25px;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #f0f8ff;
+}
+.search-menu{
+    text-align: center;
+    width: 100%;
+   
+}
+.search-menu-field{
+    text-align: center;
+}
+.search{
+    outline: none;
+
+}
+.navigation{
+    text-align: right;
+    width: 100%;
+    padding: 25px 5px;
+    margin: 5px 10px;
+}
+.navigation ul{
+    list-style: none;
+}
+.navigation ul li{
+display: inline;
+padding: 2px;
+}
+.navigation ul li a{
+    text-decoration: none;
+    color: #f0f8ff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px;
+     padding: 5px;
 }
