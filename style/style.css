@@ -45,7 +45,8 @@ body{
 .search-menu{
     text-align: center;
     width: 100%;
-   
+    padding: 25px 5px;
+    margin: 5px 10px;
 }
 .search-menu-field{
     text-align: center;
