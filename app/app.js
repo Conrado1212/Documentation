@@ -1,9 +1,9 @@
 $(document).ready(function() {
-    var NavY = $('.nav-menu').offset().top;
+    var NavY = $('.top-menu').offset().top;
 
     var stickyNav = function(){
         var ScrollY = $(window).scrollTop();
-        ScrollY > NavY ?  $('.nav-menu').addClass('sticky') : $('.nav-menu').removeClass('sticky');
+        ScrollY > NavY ?  $('.top-menu').addClass('sticky') : $('.top-menu').removeClass('sticky');
     };
 
     stickyNav();
