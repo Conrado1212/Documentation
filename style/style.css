@@ -73,16 +73,22 @@ body{
     display: flex;
     margin-left: auto;
     margin-right: auto;
-  
+    transition: box-shadow 0.25s;
+}
+.search-menu-field:focus-within{
+box-shadow: 1px 1px 5px #f0f8ff;
 }
 .search-input{
     outline: none;
     font-size: 16px;
-    color: #333333;
+    color: #000000;
     margin-left: var(--padding);
     border: none;
     background: transparent;
     flex: 1;
+}
+.search-input::placeholder{
+    color: #f0f8ff;
 }
 .navigation{
     text-align: right;
