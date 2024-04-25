@@ -6,6 +6,7 @@ body{
     box-sizing: border-box;
    font-family: sans-serif;
    font-size: 15px;
+   line-height: 1.5;
 }
 #navbar{
     height: 100%;
@@ -40,7 +41,7 @@ body{
    color: #f0f8ff;
    display: block;
    text-transform: capitalize;
-   font-size: 20px;
+   font-size: 14px;
    font-weight: 700;
    padding: 10px ;
    cursor: pointer;
@@ -141,11 +142,37 @@ padding: 2px;
      top:83px;
     margin-left: 301px;  
     height: 100%;
+    padding: 20px;
 
+}
+#main-doc header{
+    color: #f0f8ff;
+    text-align: left;
+    margin: 0;
+    font-size: 24px;
 }
 .main-section{
     display: block;
     unicode-bidi: isolate;
+}
+.main-section article{
+    color: #f0f8ff;
+    margin: 15px;
+    font-size: 15px;
+    background-color: #1e1e1e;
+    border-left: 1px solid #757272;
+    border-bottom: 1px solid #757272;
+    border-radius: 8px;
+
+}
+.main-section article p{
+padding: 8px;
+}
+.main-section article ul{
+   display: block;
+}
+.main-section article li{
+    margin: 15px 0px 0px 20px;
 }
 .sticky{
     width: 100%;
