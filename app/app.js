@@ -36,8 +36,8 @@ function getid(obj) {
 
 
 window.addEventListener('load',function(){
-  $('#menu li').click(function () {
-      $('#menu li').removeClass('active');
+  $('#navbar li a').click(function () {
+      $('#navbar li a').removeClass('active');
 
     $(this).addClass('active');
   })
@@ -46,7 +46,7 @@ window.addEventListener('load',function(){
 // get the actual pathname:
 var path = location.pathname;
 // filter menu items to find one that has anchor tag with matching href:
-$('#menu li').filter(function(){
+$('#navbar li a').filter(function(){
     return '/' + $('a', this).attr('href') === path;
 // add class active to the item:
 }).addClass('active');

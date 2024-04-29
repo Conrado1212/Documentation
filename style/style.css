@@ -46,7 +46,7 @@ body{
    padding: 10px ;
    cursor: pointer;
 }
-#navbar ul li a:hover{
+.active, #navbar ul li a:hover{
     color: #757272;
     box-shadow: 1px 1px 5px #f0f8ff;
 }
