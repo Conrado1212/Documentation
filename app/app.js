@@ -28,9 +28,9 @@ scrollToBtn.click(() => {
 }
 onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth'})"
 
-function getid(obj) {
-  alert(obj.id);
-}
+// function getid(obj) {
+//   alert(obj.id);
+// }
 
 //  onmouseover="getid(this);" 
 
@@ -53,7 +53,7 @@ $('#navbar li a').filter(function(){
 
 function menuU(){
     var toggleMenuU = document.querySelector('.menuU');
-    //console.log(toggleMenuU);
+    console.log(toggleMenuU);
     toggleMenuU.classList.toggle('active2');
 }
 
@@ -61,13 +61,13 @@ function menuU(){
 document.addEventListener("click", function(e){
     
   var MenuU = document.querySelector('.menuU.active2');
-  var toggleMenuU2 = document.querySelector('.fa-regular.fa-user');
-  console.log(e.target);
+  var toggleMenuU2 = document.querySelector('fa-solid.fa-user');
+  //console.log(e.target);
   if(typeof(MenuU) !='undefined' && MenuU !=null){
   if(e.target !==MenuU && e.target !==toggleMenuU2){
       MenuU.classList.remove('active2');
      // toggleMenuU.style.visibility = "hidden";
-      console.log(e.target);
+      //console.log(e.target);
       //&& e.target  !==toggleMenuU2
      // console.log(toggleMenuU.classList.contains('active2'));
      //&& toggleMenuU.classList.contains('active2') 
