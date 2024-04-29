@@ -45,6 +45,9 @@ body{
    padding: 10px ;
    cursor: pointer;
 }
+#navbar ul li i{
+    min-width: 25px;
+}
 .active, #navbar ul li a:hover{
     color: #757272!important;
     box-shadow: 1px 1px 5px #f0f8ff;
@@ -192,6 +195,15 @@ word-break: normal;
     position: relative;
     white-space: pre-line;
 }
+.main-section article a{
+    text-decoration: none;
+    color: #f0f8ff;
+    cursor: pointer;
+}
+.main-section article a:hover{
+    color: #757272!important;
+    box-shadow: 1px 1px 5px #f0f8ff;
+}
 .sticky{
     width: 100%;
     position: fixed;
@@ -242,4 +254,14 @@ word-break: normal;
 .active2{
     display: block;
        opacity: 1;
+}
+footer{
+    bottom: 83px;
+    position: absolute;
+    color:  #757272;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    font-size: 14px;
 }
