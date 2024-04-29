@@ -164,7 +164,7 @@ padding: 2px;
     border-left: 1px solid #757272;
     border-bottom: 1px solid #757272;
     border-radius: 8px;
-
+    padding: 10px;
 }
 .main-section article p{
 padding: 8px;
@@ -173,7 +173,20 @@ padding: 8px;
    display: block;
 }
 .main-section article li{
-    margin: 15px 0px 0px 20px;
+    margin: 15px 0px 0px 40px;
+}
+.main-section article code{
+display: block;
+border-radius: 8px;
+background-color: #4b4b4b;
+text-align: left;
+margin: 10px;
+padding: 10px;
+line-height: 2;
+word-break: normal;
+    word-wrap: normal;
+    position: relative;
+    white-space: pre-line;
 }
 .sticky{
     width: 100%;
