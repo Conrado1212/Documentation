@@ -14,7 +14,9 @@
 // });
 
 
-function scrollToElement(x,y){
+function scrollToElement(){
+let x = document.getElementsByClassName('nav-link')[0]
+ let y = document.getElementById('Variables');
 const scrollToBtn = $(x);
 const scrollToEl = $(y);
 scrollToBtn.click(() => {
@@ -53,15 +55,16 @@ $('#navbar li a').filter(function(){
 
 function menuU(){
     var toggleMenuU = document.querySelector('.menuU');
-    console.log(toggleMenuU);
+    //console.log(toggleMenuU);
     toggleMenuU.classList.toggle('active2');
 }
 
 
 document.addEventListener("click", function(e){
     
-  var MenuU = document.querySelector('active2');
-  var toggleMenuU2 = document.querySelector('fa-user');
+  var MenuU = document.querySelector('.menuU.active2');
+  //console.log(MenuU);
+  var toggleMenuU2 = document.querySelector('.fa-regular.fa-user');
   //console.log(e.target);
   if(typeof(MenuU) !='undefined' && MenuU !=null){
   if(e.target !==MenuU && e.target !==toggleMenuU2){
@@ -75,3 +78,31 @@ document.addEventListener("click", function(e){
   }
   }
 });
+
+
+// document.addEventListener("click", function xd(e){
+
+
+// console.log(e.target);
+// console.log('xd');
+// });
+
+
+
+// function scrollToElement(x,y){
+//   const scrollToBtn = $(x);
+//   const scrollToEl = $(y);
+//   scrollToBtn.click(() => {
+//     $('html').animate(
+//       {
+//         scrollTop: scrollToEl.offset().top,
+//       },
+//       800 //speed
+//     );
+//   });
+//   }
+
+
+function testLoc() {
+  location.href = "#Variables";
+}
