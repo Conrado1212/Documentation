@@ -60,8 +60,8 @@ function menuU(){
 
 document.addEventListener("click", function(e){
     
-  var MenuU = document.querySelector('.menuU.active2');
-  var toggleMenuU2 = document.querySelector('fa-solid.fa-user');
+  var MenuU = document.querySelector('active2');
+  var toggleMenuU2 = document.querySelector('fa-user');
   //console.log(e.target);
   if(typeof(MenuU) !='undefined' && MenuU !=null){
   if(e.target !==MenuU && e.target !==toggleMenuU2){

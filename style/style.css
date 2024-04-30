@@ -143,7 +143,9 @@ padding: 2px;
     margin: 5px;
      padding: 5px;
 }
-
+.navigation ul li i:hover{
+    color: #757272!important;
+}
 #main-doc{
     position: relative;
     background-color: #313131;
