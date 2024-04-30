@@ -24,6 +24,7 @@ body{
     color: #f0f8ff;
     font-size: 28px;
     margin: 10px;
+    text-align: right;
 }
 #navbar ul{
     list-style: none;
@@ -267,3 +268,49 @@ footer{
     width: 100%;
     font-size: 14px;
 }
+#check{
+    display: none;
+   
+}
+#check:checked ~ label #start{
+    opacity: 0;
+    pointer-events: none;
+    transition: 1s ease;
+}
+#check:checked ~ label #end{
+    display: block;
+    transition: 1s ease;
+}
+#check:checked ~ #navbar{
+   left: -250px;
+}
+label{
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    top: 18px;
+    height: 35px;
+    width: 32px;
+    left: 18px;
+}
+label #end, label #start{
+    color: #f0f8ff;
+    font-size: 26px;
+   position: absolute;
+    cursor: pointer;
+    z-index: 1;
+}
+label #start:hover{
+    z-index: 1;
+    color: #757272;
+}
+label #end:hover{
+    z-index: 1;
+    color: #757272;
+}
+#end{
+    display: none;
+    transition: all .5s ease;
+    position: absolute;
+    z-index:1;
+   }
