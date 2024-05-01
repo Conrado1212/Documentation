@@ -47,28 +47,37 @@
         <script src="app/app.js"></script>
     </div>
     <nav id="navbar">
-        <input type="checkbox" id="check">
-        <label for="check">
-            <i class="fa-solid fa-bars" id="start"></i>
-            <i class="fa-solid fa-bars" id="end"></i>
-        </label>
-        <header>JS Documentation</header>
+        <header>JS Documentation
+            <i class="fa-solid fa-caret-right toggle"></i>
+        </header>
         <ul>
-            <li><a class="nav-link" href="#" location.href = "#Introduction";><i class="fa-solid fa-house"></i>  Introduction</a> </li>
-            <li><a class="nav-link" href="#" onclick="document.getElementById('What_you_should_already_know').scrollIntoView({ behavior: 'smooth'})"><i class="fa-regular fa-address-card"></i>  What you should already know</a> </li>
-            <li><a  class="nav-link" href="#" onclick="document.getElementById('JavaScript').scrollIntoView({ behavior: 'smooth'})"><i class="fa-brands fa-js"></i>  JavaScript</a> </li>
-            <li><a  class="nav-link" href="#" onclick="document.getElementById('Hello_World').scrollIntoView({ behavior: 'smooth'})"><i class="fa-solid fa-face-smile"></i>  Hello World</a> </li>
-            <li><a  class="nav-link" onclick="testLoc()"><i class="fa-solid fa-coins"></i>  Variables</a> </li>
-            <li><a  class="nav-link" href="#" onclick="document.getElementById('Declaring_Variables').scrollIntoView({ behavior: 'smooth'})"><i class="fa-solid fa-ticket"></i>  Declaring Variables</a> </li>
-            <li><a class="nav-link" href="#" onclick="document.getElementById('Variable_scope').scrollIntoView({ behavior: 'smooth'})"><i class="fa-solid fa-square-root-variable"></i>  Variable scope</a> </li>
-            <li><a class="nav-link" href="#" onclick="document.getElementById('Global_varaiables').scrollIntoView({ behavior: 'smooth'})"><i class="fa-solid fa-globe"></i>  Global varaiables</a> </li>
-            <li><a class="nav-link" href="#" onclick="document.getElementById('Constants').scrollIntoView({ behavior: 'smooth'})"><i class="fa-solid fa-id-card-clip"></i>  Constants</a> </li>
-            <li><a class="nav-link" href="#" onclick="document.getElementById('Data_types').scrollIntoView({ behavior: 'smooth'})"><i class="fa-solid fa-layer-group"></i>  Data types</a> </li>
-            <li><a class="nav-link" href="#" onclick="document.getElementById('If_else_statement').scrollIntoView({ behavior: 'smooth'})"><i class="fa-solid fa-right-left"></i>  If..else statement</a> </li>
-            <li><a class="nav-link" href="#" onclick="document.getElementById('While_statement').scrollIntoView({ behavior: 'smooth'})"><i class="fa-solid fa-rotate-left"></i>  While statement</a> </li>
-            <li><a class="nav-link" href="#" onclick="document.getElementById('Function_declarations').scrollIntoView({ behavior: 'smooth'})"><i class="fa-solid fa-rocket"></i>  Function declarations</a> </li>
-            <li><a class="nav-link" href="#" onclick="document.getElementById('Reference').scrollIntoView({ behavior: 'smooth'})"><i class="fa-solid fa-print"></i>  Reference</a> </li>
+            <li><a class="nav-link" href="#Introduction" location.href = "#Introduction";><i class="fa-solid fa-house"></i>  Introduction</a> </li>
+            <li><a class="nav-link" href="#What_you_know" onclick="document.getElementById('What_you_should_already_know').scrollIntoView({ behavior: 'smooth'})"><i class="fa-regular fa-address-card"></i>  What you know</a> </li>
+            <li><a  class="nav-link" href="#JavaScript" onclick="document.getElementById('JavaScript').scrollIntoView({ behavior: 'smooth'})"><i class="fa-brands fa-js"></i>  JavaScript</a> </li>
+            <li><a  class="nav-link" href="#Hello_World" onclick="document.getElementById('Hello_World').scrollIntoView({ behavior: 'smooth'})"><i class="fa-solid fa-face-smile"></i>  Hello World</a> </li>
+            <li><a  class="nav-link" href="#Variables" onclick="testLoc()"><i class="fa-solid fa-coins"></i>  Variables</a> </li>
+            <li><a  class="nav-link" href="#Declaring_Variables" onclick="document.getElementById('Declaring_Variables').scrollIntoView({ behavior: 'smooth'})"><i class="fa-solid fa-ticket"></i>  Declaring Variables</a> </li>
+            <li><a class="nav-link" href="#Variable_scope" onclick="document.getElementById('Variable_scope').scrollIntoView({ behavior: 'smooth'})"><i class="fa-solid fa-square-root-variable"></i>  Variable scope</a> </li>
+            <li><a class="nav-link" href="#Global_variables" onclick="document.getElementById('Global_variables').scrollIntoView({ behavior: 'smooth'})"><i class="fa-solid fa-globe"></i>  Global variables</a> </li>
+            <li><a class="nav-link" href="#Constants" onclick="document.getElementById('Constants').scrollIntoView({ behavior: 'smooth'})"><i class="fa-solid fa-id-card-clip"></i>  Constants</a> </li>
+            <li><a class="nav-link" href="#Data_types" onclick="document.getElementById('Data_types').scrollIntoView({ behavior: 'smooth'})"><i class="fa-solid fa-layer-group"></i>  Data types</a> </li>
+            <li><a class="nav-link" href="#If_else_statement" onclick="document.getElementById('If_else_statement').scrollIntoView({ behavior: 'smooth'})"><i class="fa-solid fa-right-left"></i>  If..else statement</a> </li>
+            <li><a class="nav-link" href="#While_statement" onclick="document.getElementById('While_statement').scrollIntoView({ behavior: 'smooth'})"><i class="fa-solid fa-rotate-left"></i>  While statement</a> </li>
+            <li><a class="nav-link" href="#Function_declarations" onclick="document.getElementById('Function_declarations').scrollIntoView({ behavior: 'smooth'})"><i class="fa-solid fa-rocket"></i>  Function declarations</a> </li>
+            <li><a class="nav-link" href="#Reference" onclick="document.getElementById('Reference').scrollIntoView({ behavior: 'smooth'})"><i class="fa-solid fa-print"></i>  Reference</a> </li>
         </ul>
+        <div class="bottom-content">
+            <li class="mode">
+               <div class="moon-sun">
+                <i class="fa-solid fa-moon moon"></i>
+                <i class="fa-solid fa-sun sun"></i>
+               </div>
+               <span class="mode-text text">Dark Mode</span>
+               <div class="toggle-sw">
+                   <span class="sw">a</span>
+               </div>
+            </li>
+        </div>
         <footer> 
             Test.com © 2024 Thank you for your visit         
         </footer>
@@ -100,8 +109,8 @@
             </article>
             
         </section>
-        <section class="main-section" id="What_you_should_already_know">
-            <header>What you should already know</header>   
+        <section class="main-section" id="What_you_know">
+            <header>What you know</header>   
             <article>
                 <p>This guide assumes you have the following basic background:</p>
                 <ul>
@@ -189,8 +198,8 @@
                 not defined</code>
             </article>
         </section>
-        <section class="main-section" id="Global_varaiables">
-            <header>Global varaiables</header>   
+        <section class="main-section" id="Global_variables">
+            <header>Global variables</header>   
             <article>
             <p>Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax.</p> 
              </article>
@@ -238,7 +247,7 @@
             </article>
         </section>
         <section class="main-section" id="If_else_statement">
-            <header>If..else statement</header>    
+            <header>If else statement</header>    
             <article>
                 <p>Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false. An if statement looks as follows:</p>
                 <code>if (condition) { statement_1; } else { statement_2; }</code>

@@ -11,7 +11,6 @@ body{
 #navbar{
     height: 100%;
      border-right: 1px solid #757272;
-    min-width:290px;
     width: 300px;
     letter-spacing: 0.2px;
     position: fixed;
@@ -24,7 +23,25 @@ body{
     color: #f0f8ff;
     font-size: 28px;
     margin: 10px;
-    text-align: right;
+    position: relative;
+}
+#navbar header .toggle{
+    color: #f0f8ff;
+    position: absolute;
+    right: -10px;
+    transform: translateY(-50%);
+    height: 25px;
+    width: 25px;
+    top: 50%;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 24px;
+}
+
+#navbar header .toggle:hover{
+    color: #757272!important;
+   cursor: pointer;
+   transition: 0.3s ease
 }
 #navbar ul{
     list-style: none;
@@ -41,7 +58,7 @@ body{
    color: #f0f8ff;
    display: block;
    text-transform: capitalize;
-   font-size: 14px;
+   font-size: 17px;
    font-weight: 700;
    padding: 10px ;
    cursor: pointer;
@@ -49,14 +66,17 @@ body{
 #navbar ul li i{
     min-width: 25px;
 }
+
 .active, #navbar ul li a:hover{
     color: #757272!important;
     box-shadow: 1px 1px 5px #f0f8ff;
     border-left: 5px solid #757272;
+    transition: 0.3s ease
 }
 .menuU ul li a:hover{
     color: #757272!important;
     box-shadow: 1px 1px 5px #f0f8ff;
+    transition: 0.3s ease
 }
 .top-menu{
     width: 100%;
@@ -258,6 +278,44 @@ word-break: normal;
     display: block;
        opacity: 1;
 }
+.bottom-content{
+   margin: 10px;
+   width: 100%;
+
+}
+.mode{
+    display: flex;
+    height: 50px;
+}
+.bottom-content li{
+    list-style: none;
+}
+.bottom-content .mode .moon-sun{
+width: 50px;
+height: 100%;
+display: flex;
+align-items: center;
+}
+.bottom-content .mode i{
+    position: absolute;
+}
+.bottom-content .mode i.sun{
+    opacity: 0;
+}
+.mode .toggle-sw{
+    display: flex;
+    height: 100%;
+    min-width: 60px;
+    align-items: center;
+    justify-content: center;
+}
+.toggle-sw .sw{
+    position: relative;
+    height: 22px;
+    width: 44px;
+    background: #4b4b4b;
+    border-radius: 25px;
+}
 footer{
     bottom: 83px;
     position: absolute;
@@ -268,49 +326,11 @@ footer{
     width: 100%;
     font-size: 14px;
 }
-#check{
-    display: none;
-   
-}
-#check:checked ~ label #start{
-    opacity: 0;
-    pointer-events: none;
-    transition: 1s ease;
-}
-#check:checked ~ label #end{
-    display: block;
-    transition: 1s ease;
-}
-#check:checked ~ #navbar{
-   left: -250px;
-}
-label{
-    position: absolute;
-    cursor: pointer;
-    z-index: 1;
-    top: 18px;
-    height: 35px;
-    width: 32px;
-    left: 18px;
-}
-label #end, label #start{
-    color: #f0f8ff;
-    font-size: 26px;
-   position: absolute;
-    cursor: pointer;
-    z-index: 1;
-}
-label #start:hover{
-    z-index: 1;
-    color: #757272;
-}
-label #end:hover{
-    z-index: 1;
-    color: #757272;
-}
-#end{
-    display: none;
-    transition: all .5s ease;
-    position: absolute;
-    z-index:1;
-   }
+   @media (max-width: 720px) {
+    body {
+        box-sizing: border-box;
+        font-family: sans-serif;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+  }
