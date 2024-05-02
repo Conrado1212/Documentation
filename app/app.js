@@ -19,9 +19,13 @@ toggle = body.querySelector(".toggle"),
 modeSw = body.querySelector(".toggle-sw"),
 modeText = body.querySelector(".mode-text");
 
-modeSw.addEventListener("click", () =>{
- body.classList.toggle("white");
+toggle.addEventListener("click", () =>{
+  navbar.classList.toggle("close");
 })
+
+modeSw.addEventListener("click", () =>{
+  body.classList.toggle("white");
+ })
 
 function scrollToElement(){
 let x = document.getElementsByClassName('nav-link')[0]

@@ -39,6 +39,19 @@ body.white{
     left:0;
     background-color: var(--navbar-color);
 }
+#navbar.close{
+    width: 100px;
+   
+}
+#navbar.close header{
+    font-size: 12px;
+}
+#navbar.close header .toggle{
+    font-size: 14px;
+}
+#navbar.close ul li a{
+    font-size: 10px;
+}
 #navbar header{
     text-align: center;
     color: var(--text-color);
@@ -316,6 +329,10 @@ align-items: center;
 width: 50%;
 justify-content: center;
 color: var(--text-color);
+font-size: 15px;
+}
+#navbar.close .text{
+    opacity: 0;
 }
 .bottom-content .mode .moon-sun{
 width: 10%;
@@ -366,6 +383,9 @@ color: var(--text-color);
 }
 body.white .sw::before{
     left: 24px;
+}
+#navbar.close footer{
+    font-size: 8px;
 }
 footer{
     bottom: 83px;
