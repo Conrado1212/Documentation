@@ -18,9 +18,11 @@ navbar = body.querySelector("#navbar"),
 toggle = body.querySelector(".toggle"),
 modeSw = body.querySelector(".toggle-sw"),
 modeText = body.querySelector(".mode-text");
+main = body.querySelector("#main-doc");
 
 toggle.addEventListener("click", () =>{
   navbar.classList.toggle("close");
+  main.classList.toggle("toggle-main");
 })
 
 modeSw.addEventListener("click", () =>{

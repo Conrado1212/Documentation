@@ -38,6 +38,7 @@ body.white{
     top: 83px;
     left:0;
     background-color: var(--navbar-color);
+    transition: all 0.3s ease;
    
 }
 #navbar.close{
@@ -53,7 +54,11 @@ body.white{
     top:-5px;
 }
 #navbar.close ul li a{
-    font-size: 10px;
+    font-size: 12px;
+    text-align: left;
+}
+#navbar.close ul li a i{
+   
 }
 #navbar header{
     text-align: center;
@@ -61,6 +66,7 @@ body.white{
     font-size: 28px;
     margin: 10px;
     position: relative;
+    transition: all 0.3s ease;
 }
 #navbar header .toggle{
     color: var(--text-color);
@@ -90,6 +96,7 @@ body.white{
    position: relative;
    width: 100%;
 }
+
 #navbar ul li a{
    text-decoration: none;
    color: var(--text-color);
@@ -99,6 +106,7 @@ body.white{
    font-weight: 700;
    padding: 10px ;
    cursor: pointer;
+   transition: all 0.4s ease;
 }
 #navbar ul li i{
     min-width: 25px;
@@ -209,9 +217,12 @@ padding: 2px;
     background-color: var(--main-color);
      top:83px;
     margin-left: 301px;  
-   
+   transition: all 0.3s ease;
     padding: 20px;
 
+}
+#main-doc.toggle-main{
+    margin-left: 101px;  
 }
 #main-doc header{
     color: var(--text-color);
@@ -351,6 +362,12 @@ color: var(--text-color);
    
 }
 .bottom-content .mode i.sun{
+    opacity: 0;
+}
+body.white .bottom-content .mode i.sun{
+    opacity:1;
+}
+body.white .bottom-content .mode i.moon{
     opacity: 0;
 }
 .mode .toggle-sw{
