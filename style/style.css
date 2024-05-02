@@ -38,16 +38,19 @@ body.white{
     top: 83px;
     left:0;
     background-color: var(--navbar-color);
+   
 }
 #navbar.close{
     width: 100px;
    
 }
 #navbar.close header{
-    font-size: 12px;
+    font-size: 10px;
 }
 #navbar.close header .toggle{
     font-size: 14px;
+    transform: rotate(180deg);
+    top:-5px;
 }
 #navbar.close ul li a{
     font-size: 10px;
@@ -314,6 +317,7 @@ word-break: normal;
 }
 .bottom-content{
    width: 100%;
+   position: relative;
 
 }
 .mode{
@@ -332,7 +336,7 @@ color: var(--text-color);
 font-size: 15px;
 }
 #navbar.close .text{
-    opacity: 0;
+    display: none;
 }
 .bottom-content .mode .moon-sun{
 width: 10%;
