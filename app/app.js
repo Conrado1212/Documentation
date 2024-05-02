@@ -13,6 +13,15 @@
 //     });
 // });
 
+var   body = document.querySelector("body"),
+navbar = body.querySelector("#navbar"),
+toggle = body.querySelector(".toggle"),
+modeSw = body.querySelector(".toggle-sw"),
+modeText = body.querySelector(".mode-text");
+
+modeSw.addEventListener("click", () =>{
+ body.classList.toggle("white");
+})
 
 function scrollToElement(){
 let x = document.getElementsByClassName('nav-link')[0]
@@ -106,3 +115,5 @@ document.addEventListener("click", function(e){
 function testLoc() {
   location.href = "#Variables";
 }
+
+
