@@ -50,8 +50,8 @@ body.white{
 }
 #navbar.close header .toggle{
     font-size: 14px;
-    transform: rotate(180deg);
-    top:-5px;
+    transform: translateY(-50%);
+    top:50%;
 }
 #navbar.close ul li a{
     font-size: 12px;
@@ -71,14 +71,15 @@ body.white{
 #navbar header .toggle{
     color: var(--text-color);
     position: absolute;
-    right: -10px;
-    transform: translateY(-50%);
+    right: -15px;
+    transform: translateY(-50%) rotate(180deg);
     height: 25px;
     width: 25px;
     top: 50%;
     justify-content: center;
     border-radius: 50%;
     font-size: 24px;
+    transition: 0.3s ease
 }
 
 #navbar header .toggle:hover{
@@ -246,12 +247,14 @@ padding: 2px;
 }
 .main-section article p{
 padding: 8px;
+
 }
 .main-section article ul{
    display: block;
 }
 .main-section article li{
     margin: 15px 0px 0px 40px;
+    
 }
 .main-section article code{
 display: block;
@@ -359,6 +362,7 @@ color: var(--text-color);
 }
 .bottom-content .mode i{
     position: absolute;
+    transition: 0.3s ease;
    
 }
 .bottom-content .mode i.sun{
@@ -377,6 +381,7 @@ body.white .bottom-content .mode i.moon{
     align-items: center;
     justify-content: center;
     width: 40%;
+    transition: 0.3s ease;
 }
 .toggle-sw .sw{
     position: relative;
@@ -388,6 +393,7 @@ body.white .bottom-content .mode i.moon{
     cursor: pointer;
     border-left: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
+    transition: 0.3s ease;
 }
 .sw::before{
     position: absolute;

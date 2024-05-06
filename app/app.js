@@ -25,8 +25,10 @@ toggle.addEventListener("click", () =>{
   main.classList.toggle("toggle-main");
 })
 
+
 modeSw.addEventListener("click", () =>{
   body.classList.toggle("white");
+  body.classList.contains("white") ? modeText.innerText ="Light Mode" : modeText.innerText ="Dark Mode"
  })
 
 function scrollToElement(){
