@@ -46,19 +46,25 @@ body.white{
    
 }
 #navbar.close header{
-    font-size: 10px;
+    font-size: 18px;
+    text-overflow: ellipsis;
+    white-space: nowrap ;
+    overflow: hidden;
+    
 }
 #navbar.close header .toggle{
     font-size: 14px;
     transform: translateY(-50%);
     top:50%;
+    right: -8px;
 }
 #navbar.close ul li a{
-    font-size: 12px;
+    font-size: 16px;
     text-align: left;
-}
-#navbar.close ul li a i{
-   
+    text-overflow: ellipsis;
+    white-space: nowrap ;
+    overflow: hidden;
+
 }
 #navbar header{
     text-align: center;
